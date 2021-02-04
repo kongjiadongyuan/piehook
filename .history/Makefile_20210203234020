@@ -16,4 +16,3 @@ clean:
 	$(MAKE) clean -C ./kernel_module
 	$(MAKE) clean -C ./cJSON
 	$(MAKE) clean -C ./pie_hook_interface
-	rm -rf ./bin
