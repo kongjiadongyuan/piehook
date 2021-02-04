@@ -1,0 +1,6 @@
+[submodule "cJSON"]
+	path = cJSON
+	url = https://github.com/DaveGamble/cJSON.git
+[submodule "pie_hook_interface"]
+	path = pie_hook_interface
+	url = https://github.com/Roarcannotprogramming/pie_hook_interface.git
