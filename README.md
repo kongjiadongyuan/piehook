@@ -1,7 +1,7 @@
 # piehook
 A small tool to "customize" your own PIE/ASLR
 
-## Install
+## Build
 ```bash
 git clone --recursive https://github.com/kongjiadongyuan/piehook.git
 cd piehook
