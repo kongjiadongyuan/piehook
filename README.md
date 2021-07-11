@@ -174,7 +174,7 @@ The first two parameters are easy to understand, but what do *STACK_BASE* and *S
 
 When kernel loads a binary, it will randomly choose a base address to place the stack, like this:
 
-![stack](images\README\stack.png)
+![stack](./images/README/stack.png)
 
 However, that's not enough, let's take a look at a progress on my virtual machine, it's just */bin/cat*.
 
@@ -875,7 +875,7 @@ But there exists a **hole** between them, just like the area from 0x00007fffffff
 
 So now you know, if we want to control the address of function call stack (not only the page address where the stack locate), we have to control at least two parameters, like this:
 
-![stackmagic](images\README\stackmagic.png)
+![stackmagic](./images/README/stackmagic.png)
 
 The last question is, why we call *stack_magic* as "magic", and how does it influences the address of function call stack.
 
