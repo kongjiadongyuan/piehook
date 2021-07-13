@@ -897,7 +897,7 @@ Sounds complicated right? You can deepen understanding with the help of graph ab
    # BOOM
    ```
 
-   I haven't researched the problem yet, so I recommand you to start a program manually, and use gdb to attach it (as we often do in CTF competitions)
+   I recommand you to start a program manually, and use gdb to attach it (as we often do in CTF competitions)
 
    ```bash
    # shell1
@@ -910,6 +910,16 @@ Sounds complicated right? You can deepen understanding with the help of graph ab
    > sudo -E gdb attach 123
    gdb> ...
    ```
+
+   If you persist on starting a process via gdb, do not let gdb block aslr:
+   ```
+   gdb> set disable-randomization off
+   gdb> start
+   ...
+   ```
+   The reason why it crash I haven't figured it out yet.
+   
+   When you disable the aslr in your kernel, *piehook* will take no effect. But the kernel will work fine.
 
 2. When you find your kernel is not right, just smile, and reboot it.
    : P
